@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+font-family: 'Abel', sans-serif;
+
+/* Pen-specific styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 150%;
+  overflow-y: hidden;
+  background-image: url("prs.png");
+}
+
+section {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+div {
+  height: 100%;
+}
+
+form-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  /* padding: 50px; */
+  margin-bottom: 25%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: 2px solid #a5a5a5;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+a {
+  font-size: 12px;
+}
+
+/* Pattern styles */
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  width: 40%;
+  background-image: url("prs.png");
+  float: none;
+  
+}
+
+.right-half {
+  background-color: #ffffff;
+  position: absolute;
+  right: 0px;
+  width: 60%;
+  margin-top: 25px;
+  float: right
+}
+
+.right-half img{width:37%; margin-bottom:5%; margin-top:10%;}
+
+.button {
+  background-color: #5046af; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 45%;
+  border-radius: 7px;
+}
+
+.button1 {
+  background-color: #130f38; 
+  color: black; 
+  border: 2px solid #5046af;
+  margin-top: 5px;
+  color: azure;
+}
+
+.button1:hover {
+  background-color: #5046af;
+  color: white;
+}
+
+.email{
+  margin: -8000px 0px 15px 5px;
+  border: 1px solid #8c8b8b;
+  border-radius: 8px;
+  height: 40px;
+  width:45%;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.password{
+  margin: 0px 0px 5px 5px;
+  border: 1px solid #8c8b8b;
+  border-radius: 8px;
+  height: 40px;
+  width:45%; 
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: #cccccc;
+}
+
+a:link {
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .left-half{
+    display:none;
+}
+  .right-half {
+    background-color: #ffffff;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  margin-top: 25px;
+  float: right;
+   /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .right-half img {width:70%;}
+
+  .button{width:60%; height:17%; font-size:13px;}
+
+  .email, .password{font-size:20px;}
+}
+
+</style>
+</head>
+<body>
+
+<section class="container">
+		<div class="row">
+        <div class="left-half">
+            <img src="img/prs.png" style="max-width:100%;max-height:100%" >
+        </div>
+
+        <div class="right-half">
+            <img src="img/logo.png">
+                <form method="post" onsubmit="return false;">
+                        <div class="form-group">
+                            <input id="user" type="username" name="email" placeholder="Enter your email" class="email" >
+                        </div>
+                        <div class="form-group">
+                          <input type="password" name="email" placeholder="Enter your password" class="password" >
+                        </div>
+                          <a href="">Forgot password?</a> 
+
+                        <br>
+                        <button class="button button1" id="login" type="submit"><b>Login</b></button>
+                        <p style="margin-top:50px; font-size: 10px;">powered by
+                            <a href="https://www.biosec.com.ng" target="blank">
+                              <b style="color: #db4f4f">BIOSEC SOLUTIONS</b></a>
+                          </p> 
+                </form>
+        </div>
+    </div>
+</section>
+      
+
+</body>
+</html>
